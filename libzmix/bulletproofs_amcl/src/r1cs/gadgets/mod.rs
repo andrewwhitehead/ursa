@@ -3,6 +3,7 @@
 extern crate merlin;
 extern crate rand;
 
+pub mod bit_reveal;
 pub mod bound_check;
 // TODO: Uncomment
 //pub mod hamming_distance;
