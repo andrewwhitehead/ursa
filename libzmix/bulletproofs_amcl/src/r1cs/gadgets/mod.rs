@@ -5,6 +5,7 @@ extern crate rand;
 
 pub mod bit_reveal;
 pub mod bound_check;
+pub mod compare;
 // TODO: Uncomment
 //pub mod hamming_distance;
 pub mod helper_constraints;
