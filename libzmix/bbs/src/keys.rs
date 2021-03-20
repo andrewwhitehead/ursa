@@ -226,7 +226,7 @@ impl DeterministicPublicKey {
             return Err(BBSErrorKind::KeyGenError.into());
         }
         let mc_bytes = (message_count as u32).to_be_bytes();
-        let mut data = Vec::with_capacity(9 + G2_UNCOMPRESSED_SIZE);
+        let mut data = Vec::with_capacity(10 + G2_UNCOMPRESSED_SIZE);
         self.0
             .serialize(&mut data, false)
             .map_err(|_| BBSError::from_kind(BBSErrorKind::KeyGenError))?;
